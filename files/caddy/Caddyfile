@@ -1,6 +1,6 @@
 sw.gcx.pw:443 {
     tls /opt/acme/gcx.pw/gcx.pw/certificates/_.gcx.pw.crt /opt/acme/gcx.pw/gcx.pw/certificates/_.gcx.pw.key
-    proxy / swirl_swirl:8001 {
+    proxy / swirl:8001 {
         header_upstream Host {host}
         header_upstream X-Real-IP {remote}
         header_upstream X-Forwarded-For {remote}
